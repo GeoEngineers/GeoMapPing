@@ -1,19 +1,21 @@
 {
-  "name": "env-quality",
+  "name": "GeoMapPing",
   "version": "0.1.0",
   "author": "SmartMine",
-  "description": "Environmental Permit Sampling",
+  "description": "Ping map services and email an admin if they are offline.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/notsureyet"
+    "url": "https://github.com/GeoEngineers/GeoMapPing"
   },
   "dependencies" : {
     "underscore" :  "*",
     "bookshelf"  :  "*",
     "q" :  "*",
-	"geojson" : "*",
-	"restify" : "*",
-	"minify" : "*"
+    "geojson" : "*",
+    "restify" : "*",
+    "minify" : "*",
+    "sqlite3" : "*",
+    "nodemailer" : "*"
   },
   "devDependencies": {
     "jasmine-node"    :  "*"

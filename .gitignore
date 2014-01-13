@@ -11,6 +11,7 @@ pids
 logs
 results
 
-bower_components 
+
 node_modules
+bower_components
 npm-debug.log
