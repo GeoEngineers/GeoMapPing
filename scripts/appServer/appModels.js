@@ -6,7 +6,7 @@ bookshelf.pg = bookshelf.initialize({
     host     : 'localhost',
 	port     : '5432',
     user     : 'postgres',
-    password : 'geopostgres',
+    password : '',
     database : 'Database_Name',
     charset  : 'utf8'
   }

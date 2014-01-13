@@ -1,3 +1,3 @@
-cd C:\projects\node\ArcGISServicesMonitor
+cd C:\node\GeoMapPing
 node checkservices.js
 exit
