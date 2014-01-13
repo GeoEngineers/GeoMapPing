@@ -1,0 +1,186 @@
+#map {
+    position: absolute;
+    left: 0px;
+	top: 0px;
+    bottom: 47px; /* forget height, use this */
+    /*height: 100%;*/
+    width: 100%;
+}
+
+.leaflet-control-zoom {
+    margin-bottom:25px !important;
+}
+
+#map-buttons {
+    position: absolute;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    right: 10px;
+    bottom: 68px;
+    z-index: 100;
+}
+#map-buttons button {
+    padding-right: 15px;
+    padding-top: 8px;
+    text-align: center;
+}
+#btnLocationMenu {
+    border-radius: 30px 30px 30px 30px;
+    left: 10px;
+    margin: 0;
+    position: absolute;
+    top: 15px;
+    z-index: 100;
+}
+
+.leaflet-overlay-pane{
+	display:none;
+}
+
+#map-ui {
+    position: absolute;
+    bottom: 75px;
+    left: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+#map-ui a {
+    font: normal 13px/18px 'Helvetica Neue', Helvetica, sans-serif;
+    background: #FFF;
+    color: #3C4E5A;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #BBB;
+    border-bottom-width: 0;
+    min-width: 138px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#map-ui a:hover {
+    background: #ECF5FA;
+}
+
+#map-ui li:last-child a {
+    border-bottom-width: 1px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+#map-ui li:first-child a {
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+#map-ui a.active {
+    background: #3887BE;
+    border-color: #3887BE;
+    border-top-color: #FFF;
+    color: #FFF;
+}
+
+
+#toggle-menu {
+    /*background-color: #FF0000;
+    border: 1px solid #FFFFFF;*/
+    position: absolute;
+    z-index: 99999;
+}
+
+.geolocate-menu {
+    position: absolute;
+    z-index: 99999;
+}
+
+.unboundNewMarkerMsg{
+	color: #000000;
+}
+
+.marker-cluster span {
+    color: #000099;
+}
+
+.layerIcon {
+	border: 1px solid #333333;
+	cursor: pointer;
+    display: inline-block;
+    font-size: 8pt;
+    height: 64px;
+	margin: 3px 0px 3px 0px;
+    padding: 15px 3px 0px 3px;
+    text-align: center;
+    vertical-align: middle;
+    width: 64px;
+	border-radius: 15px;
+}
+
+.layerIcon.active{
+	background-color: #3887BE;
+}
+
+.markerAddList {
+    line-height: 24pt;
+    margin: 0 10px 15px;
+}
+
+.markerAddList a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.markerLayers{
+	position:relative;
+    padding:0px;
+    margin:0px;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+	.markerAddList .instructions{
+		line-height: 18pt;
+		padding-bottom: 10px;
+	}
+	.markerAddList .markers .span3{
+		float:left !important;
+		width: 220px !important;
+	}
+	.markerLayers{
+		padding-bottom:10px;
+	}
+}
+
+.markerBackdrop{	
+	border:1px solid #FFFFFF; 
+	border-radius:12px; 
+	padding:5px 6px 3px 6px;
+	text-align:center;
+}
+
+.markerBackdrop3x {
+    border: 1px solid #000000;
+    border-radius: 25px 25px 25px 25px;
+    height: 30px;
+    width: 30px;
+    padding: 13px 19px 3px 2px;
+	display: inline-block;
+	background-color:#FFFFFF;
+}
+
+.markerBackdrop3x i {
+	padding-left:8px;
+	color:#23446D;
+}
+
+.marker-title{
+	color:#333333;
+	font-size: 12pt;		
+}
+
+.marker-description{
+	color:#000000;
+	font-size: 10pt;
+}

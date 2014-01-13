@@ -1,0 +1,8 @@
+{
+	"port": 1337,
+	"host": "localhost",
+	"adminemail": "",
+	"emailservice": "Amazon",
+	"emailuser": "",
+	"emailpass": ""
+}

@@ -1,0 +1,440 @@
+/* --------------------------------------
+  Little Helpers
+----------------------------------------- */
+
+.button .icon { margin-right: 5px;}
+
+/* --------------------------------------
+  Branding Overrides
+----------------------------------------- */
+
+.branding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+
+.branding .logo {
+  background: url(images/sprite.png) 0 20px no-repeat;
+  }
+
+.fillE {
+  background: #28353d url(images/dotgrid-pattern.png);
+  }
+
+.branding .logos {
+  position: relative;
+  }
+
+.branding .attribution {
+  position: absolute;
+  left: 0px;
+  top: 45px;
+  color: white;
+  }
+
+.branding .attribution .small-mapbox {
+  display: inline-block;
+  background: url(images/sprite.png) 2px -74px no-repeat;
+  width: 70px;
+  text-indent: -9999px;
+  overflow: hidden;
+  }
+  .branding .attribution .small-mapbox:hover {
+    background-position-x: -78px;
+    }
+
+/* --------------------------------------
+  Basic Styles
+----------------------------------------- */
+.fillG {
+  background: url(images/dotgrid-pattern.png) 0 0 repeat #6565A0;
+  color: white;
+  }
+
+.fillDG {
+  background: url(images/dotgrid-pattern.png) 0 0 repeat #8A8ACB;
+  color: white;
+  }
+
+#maki-hero {
+  position: relative;
+  z-index: 0;
+  }
+
+.intro {
+  min-height: 420px;
+    -webkit-animation:fadeInRight 500ms ease 500ms both;
+       -moz-animation:fadeInRight 500ms ease 500ms both;
+         -o-animation:fadeInRight 500ms ease 500ms both;
+            animation:fadeInRight 500ms ease 500ms both;
+  }
+
+#map {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+    -webkit-animation:fadeIn 500ms ease 1000ms both;
+       -moz-animation:fadeIn 500ms ease 1000ms both;
+         -o-animation:fadeIn 500ms ease 1000ms both;
+            animation:fadeIn 500ms ease 1000ms both;
+  }
+
+.download {
+  }
+.download-button {
+  margin: 20px 0;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0,0.05) 0px 0px 0px 5px;
+  }
+  .download-button small, .download-button h3 {
+            animation: fadeIn 500ms ease 250ms both;
+       -moz-animation: fadeIn 500ms ease 250ms both;
+    -webkit-animation: fadeIn 500ms ease 250ms both;
+    }
+  .download-button .details small, .download-button .details h3 {
+    color: #fff;
+    }
+  .download-button .label small, .download-button .label h3 {
+    color: #3C4E5A;
+    }
+  .download-button h3 {
+    text-shadow: rgba(0,0,0,0.2) 0px -1px;
+    margin-bottom: 0;
+    }
+  .download-button .details {
+    border: 1px solid #3887be;
+    border-right: none;
+    border-radius: 0 4px 4px 0;
+    background-color:#3887BE;
+    white-space: nowrap;
+    }
+      .download-button:hover .details {
+      background: #3bb2d0;
+      border-color: #3bb2d0;
+      }
+  .download-button .label {
+    position: relative;
+    border: 1px solid #3175a5;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    }
+  .download-button:hover .label { border-color: #3bb2d0; }
+  .download-button:active .details {
+    box-shadow: inset rgba(0,0,0,0.4) 0px 1px 3px, inset rgba(0,0,0,0.1) 0px -20px 20px -10px;
+    }
+
+.download-button .big-icon-download {
+  background: url(images/sprite.png) -165px 3px no-repeat;
+  height: 35px;
+  width: 20px;
+  float: left;;
+  margin-right: 10px;
+  }
+
+.illustration-container {
+  overflow: hidden;
+  height: 350px;
+  position: relative;
+  }
+
+.open-source-illustration {
+  background: url(images/sprite.png) 0 -155px no-repeat;
+  height: 350px; width: 460px;
+  position: absolute;;
+  bottom: 0; left: 0; right: 0;
+  margin: 0 auto;
+  }
+
+/* --------------------------------------
+  Maki Icon Grid
+----------------------------------------- */
+.canvas {
+  position: relative;
+  background: #fff url(images/bg.png) repeat 0 0;
+  }
+
+/*Search box*/
+.canvas-controls {
+  padding-top: 0;
+  position: relative;
+  }
+  .canvas-controls form input {
+    background: #fff url(images/sprite.png) -441px 10px no-repeat;
+    width: 100%;
+    height: 40px;
+    padding: 10px 5px;
+    line-height: 40px\9; /* IE6,7,8 Hack to center the cursor in IE */
+    padding-left: 30px;
+    border-radius: 4px 0 0 4px;
+    box-shadow: rgba(0,0,0,0.05) 0px 0px 0px 5px, inset #ddd 0px 1px 3px;
+    -webkit-appearance: none;
+    }
+
+/*Icons on the canvas*/
+
+#maki-set { min-height: 300px; }
+#maki-set > ul.icon-set {
+  -webkit-animation:fadeIn 500ms ease 1500ms both;
+     -moz-animation:fadeIn 500ms ease 1500ms both;
+       -o-animation:fadeIn 500ms ease 1500ms both;
+          animation:fadeIn 500ms ease 1500ms both;
+  }
+
+ul.icon-set {
+  float: left;
+  position: relative;
+  }
+
+.maki-details {
+  background: url(images/maki-dot-pattern.png) 0 0 repeat #8fa363;
+  padding: 20px;
+  min-height: 190px;
+  width: 880px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 20px;
+  z-index: 1000;
+  }
+
+/* Searching icons */
+
+.title { padding: 0;}
+
+#maki-set.active ul  { visibility: hidden\9; }
+
+body.searching #search-results { display: block; }
+#search-results {
+  display: none;
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 160px;
+  overflow: hidden;
+  }
+  #search-results div {
+    visibility: hidden;
+    padding: 20px;
+    }
+  #search-results div.empty {
+    left: 0; right: 0; top: 130px;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    color: #3C4E5A;
+    font-size: 20px;
+    }
+  #search-results div.active { visibility: inherit; }
+
+  #search-results ul#results {
+    position: absolute;
+    bottom: 60px;
+    width: 66.6666%;
+    margin-left: 16.6666%;
+    transition:all 250ms;
+    -moz-transition:all 250ms;
+    -webkit-transition:all 250ms;
+    }
+    #search-results ul#results.size-1 {
+      left: 50%;
+      width: 60px;
+      margin-left: -30px;
+      -moz-transition: none;
+      -o-transition: none;
+      -webkit-transition: none;
+      transition: none;
+      }
+    #search-results ul#results.size-2  { margin-left: 37.5000%; width: 25%;}
+    #search-results ul#results.size-3  { margin-left: 37.5000%; width: 25%;}
+    #search-results ul#results.size-4  { margin-left: 37.5000%; width: 25%;}
+    #search-results ul#results.size-5  { margin-left: 33.3333%; width: 33.3333%; }
+    #search-results ul#results.size-6  { margin-left: 33.3333%; width: 33.3333%; }
+    #search-results ul#results.size-7  { margin-left: 33.3333%; width: 33.3333%; }
+    #search-results ul#results.size-8  { margin-left: 29.1666%; width: 41.6666%; }
+    #search-results ul#results.size-9  { margin-left: 29.1666%; width: 41.6666%; }
+    #search-results ul#results.size-10 { margin-left: 29.1666%; width: 41.6666%; }
+    #search-results ul#results.size-11 { margin-left: 25.0000%; width: 50%; }
+    #search-results ul#results.size-12 { margin-left: 25.0000%; width: 50%; }
+    #search-results ul#results.size-13 { margin-left: 25.0000%; width: 50%; }
+    #search-results ul#results.size-14 { margin-left: 20.8333%; width: 58.333%; }
+    #search-results ul#results.size-15 { margin-left: 20.8333%; width: 58.333%; }
+    #search-results ul#results.size-16 { margin-left: 20.8333%; width: 58.333%; }
+
+    #search-results ul#results li {
+      position: relative;
+      float: left;
+      }
+
+.title-box {
+  position: absolute;
+  background: white;
+  left: -25px; right: 0;
+  bottom: 60px;
+  width: 120px;
+  padding: 10px;
+  color: #3C4E5A;
+  text-align: center;
+  margin: auto;
+  white-space:nowrap;
+  display: none;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  }
+  .title-box::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ddd;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    }
+#maki-set ul.icon-set:hover .title-box,
+#search-results ul#results li:hover .title-box {
+  display: block;
+  }
+
+a.search-download {
+  position: absolute;
+  right: 203px;
+  font-size: 14px;
+  bottom: 50px;
+  }
+.icon.close {
+  background: #3C4E5A url(images/sprite.png) -195px 0px no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 50px;
+  position: absolute;
+  z-index: 100;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: none;
+  }
+  .icon.close.active { display: block; }
+
+/* --------------------------------------
+  Icon Preview
+----------------------------------------- */
+
+.preview-screen {
+  height: 200px;
+  }
+  .preview-screen img {
+    display: block;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    }
+#maki-icon-preview ul {
+  box-shadow: rgba(0,0,0,0.05) 0 0 0 5px;
+  border-radius: 4px;
+  }
+
+#maki-icon-preview li a {
+  float: left;
+  width: 33.3333%;
+  margin: 0;
+  border-radius: 0;
+  background: #ABABD1;
+  border-right: 1px solid #8A8ACB;
+  box-shadow: none;
+  font-size: 12px;
+  text-shadow: none;
+  font-family: 'Opensans',Arial,sans-serif;
+  color: #3C4E5A;
+  text-transform: none;
+  min-width: 0;
+  transition: background 500ms;
+  -moz-transition: background 500ms;
+  -webkit-transition: background 500ms;
+  -o-transition: background 500ms;
+  }
+  #maki-icon-preview li a.active { background: white; }
+  #maki-icon-preview li a.size-12 {
+    border-radius: 0 4px 4px 0;
+    border-right: 0px;
+    }
+  #maki-icon-preview li a.size-24 {
+    border-radius: 4px 0 0 4px;
+    }
+
+#maki-icon-preview .icon {
+  height: 24px;
+  width: 24px;
+  background: url(images/sprite.png) -200px -35px no-repeat;
+  }
+#maki-icon-preview .icon.size-18 { background-position-y: -85px;}
+#maki-icon-preview .icon.size-12 { background-position-y: -115px}
+
+/* --------------------------------------
+  Footer
+----------------------------------------- */
+.footer-actions {
+  color: #3c4e5a;
+  }
+  .footer-actions .cell6:first-child { border-right: 1px solid #ddd; }
+
+.spot-illustration {
+  background: url(images/sprite.png) -300px 0px no-repeat;
+  display: block;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto 20px;
+  }
+  .spot-illustration.with-tilemill { background-position-x: -380px; }
+
+.footer { color: #3c4e5a; }
+
+/* --------------------------------------
+  Map Styles
+----------------------------------------- */
+
+#maki #map {
+  color: #444;
+  background: #f5f5f5;
+  position: relative;
+  width: 920px;
+  height: 300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  }
+.map-tooltip { color: #3C4E5A; }
+
+@media
+only screen and (max-width: 640px) {
+  .download { display: none;}
+  #map { position: relative; height: 280px; }
+  .intro { min-height: 0;}
+  .canvas-controls { padding-bottom: 40px;}
+  #results { bottom: -40px;}
+  .info .cell6:first-child { padding-bottom: 0;}
+  .footer-actions .cell6:first-child { border-right: 0px; border-bottom: 1px solid #ddd;
+  }
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio : 2),
+  only screen and (min-device-pixel-ratio : 2) {
+  .icon.close,
+  .canvas-controls form input,
+  .maki-details,
+  #maki-icon-preview .icon,
+  .spot-illustration,
+  .open-source-illustration,
+  .download-button .big-icon-download,
+  .branding .attribution .small-mapbox,
+  .branding .logo {
+    background-image: url(images/sprite@2x.png);
+    background-size: 470px 505px;
+  }
+}

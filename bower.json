@@ -1,0 +1,32 @@
+{
+  "name": "ArcGISMonitor",
+  "version": "0.0.0",
+  "homepage": "https://www.smartmine.com",
+  "authors": [
+    "Mike Mills <mmills@smartmine.com>"
+  ],
+  "description": "Smartmine ArcGIS Monitor",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "*",
+    "backbone": "*",
+    "bootstrap": "*",
+    "jquery": "*",
+    "jquery-ui": "*",
+    "jquery.cookie": "*",
+    "backbone.localStorage": "*",
+	"marionette": "*",
+	"handlebars": "*",
+	"leaflet-providers": "*",
+	"bootstrap-datepicker": "*",
+	"requirejs": "*"
+  }
+}

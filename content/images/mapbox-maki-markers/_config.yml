@@ -1,0 +1,8 @@
+auto: true
+server: true
+exclude:
+  - README.markdown
+  - nounproject
+url: http://mapbox.com
+baseurl: /maki
+permalink: /:title.html
