@@ -9,36 +9,17 @@
 		<link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
         <link rel="stylesheet" type='text/css' href="./content/local.min.css">		
-		<link rel="stylesheet" type='text/css' href="./content/fontAwesome/css/font-awesome.css">
-		<link rel="stylesheet" type='text/css' href='http://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css' />
+	<link rel="stylesheet" type='text/css' href="./content/fontAwesome/css/font-awesome.css">
         <link rel="stylesheet" type='text/css' href="./content/themes/base/SlickGrid/slick.grid.css">
-
-        <!--[if lte IE 8]>
-        <link rel="stylesheet" type='text/css' href="../dist/MarkerCluster.Default.ie.css" />
-        <![endif]-->
-        <!--[if lte IE 8]>
-		<link rel="stylesheet" type='text/css' href='http://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.ie.css' >
-		<![endif]-->
         <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans'>
 	</head>
     <body>	
         <div id="mainBody" class="form-horizontal" style="width: 100%;">
-				<div id="HeaderNavContainer"></div>
-                <div id="ApplicationContainer" style="margin-top: 50px; bottom: 0; "></div>
+		<div id="HeaderNavContainer"></div>
+                <div id="ApplicationContainer" style="margin-top:60px; bottom: 0; "></div>
                 <div id="localModalBlock" class="modal"></div>			
-        </div>
-        <footer>
-			<div class="navbar-fixed-bottom">
-				<div class="container">
-					<div id="FooterNavSlideOut" class="accordion-body collapse"></div>
-					<a id="FooterSlideToggle" class="accordion-toggle" data-toggle="collapse" href="#FooterNavSlideOut"></a>
-				</div>
-			</div>
-			<div id="FooterNavContainer"></div>
-        </footer>
-		<div id="loadingDiv"><img src="./content/images/loading_base.gif" /></div>
-		<script src='http://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.js'></script>
-
+        </div>        
+	<div id="loadingDiv"><img src="./content/images/loading_base.gif" /></div>
         <script type="text/javascript" src="./bower_components/jquery/jquery.js"></script>
         <script type="text/javascript" src="./bower_components/jquery-ui/ui/jquery-ui.js"></script>
         <script type="text/javascript" src="./bower_components/jquery.cookie/jquery.cookie.js"></script>
@@ -48,8 +29,7 @@
         <script type="text/javascript" src="./bower_components/backbone.localStorage/backbone.localStorage.js"></script>
         <script type="text/javascript" src="./bower_components/marionette/lib/backbone.marionette.js"></script>
         <script type="text/javascript" src="./bower_components/handlebars/handlebars.js"></script>
-		<script type="text/javascript" src="./bower_components/leaflet-providers/leaflet-providers.js"></script>
-		<script type="text/javascript" src="./bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="./bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
         <script type="text/javascript" src="./bower_components/requirejs/require.js"></script>
 		
         <script type="text/javascript" src="./scripts/lib/shims/bind.js"></script>
@@ -61,7 +41,6 @@
         <script type="text/javascript" src="./scripts/lib/slickgrid/slick.dataview.js"></script>
         <script type="text/javascript" src="./scripts/lib/slickgrid/slick.formatters.js"></script>
         <script type="text/javascript" src="./scripts/lib/slickgrid/slick.grid.js"></script>
-
         <script type="text/javascript" src="./scripts/appClient/config/siteConfig.js"></script>
         <script type="text/javascript" src="./scripts/appClient/extensions/contstructorsExtend.js"></script>
         <script type="text/javascript" src="./scripts/appClient/extensions/analyticsWrapper.js"></script>		
@@ -71,8 +50,6 @@
         <script type="text/javascript" src="./scripts/appClient/models/applicationModels.js"></script>
         <script type="text/javascript" src="./scripts/appClient/routers/applicationRouters.js"></script>
         <script type="text/javascript" src="./scripts/appClient/regions/applicationRegions.js"></script>
-        <script type="text/javascript" src="./scripts/appClient/pageLoader.js"></script>
-		
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvCZZU_hza7kZHCJ3a3d0oa9SRArGXNew&sensor=true"></script>	
+        <script type="text/javascript" src="./scripts/appClient/pageLoader.js"></script>		
 	</body>
 </html>
