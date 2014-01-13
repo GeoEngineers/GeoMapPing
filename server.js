@@ -1,8 +1,8 @@
 
 var restify = require('restify');
+var fs = require("fs");
 var siteController = require('./scripts/appServer/controllers/siteController.js');
 var servicesController = require('./scripts/appServer/controllers/servicesController.js');
-var fs = require("fs");
 var config = JSON.parse(fs.readFileSync("config.json"));
 
 

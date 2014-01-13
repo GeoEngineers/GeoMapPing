@@ -1,4 +1,3 @@
-var GeoJSON = require('geojson');
 var sqliteQuery = require('../lib/geoSqliteQuery.js');
 var utilities = require('../lib/utilities.js');
 

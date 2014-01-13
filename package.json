@@ -14,8 +14,12 @@
     "geojson" : "*",
     "restify" : "*",
     "minify" : "*",
-    "sqlite3" : "*",
-    "nodemailer" : "*"
+    "amazon-ses" : "*",
+    "sqlite3" : "~2.1.19",
+    "request" : "*",
+    "nodemailer" : "*",
+    "when": "*",
+    "change-case": "~1.0.4"
   },
   "devDependencies": {
     "jasmine-node"    :  "*"
