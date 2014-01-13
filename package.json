@@ -8,6 +8,7 @@
     "url": "https://github.com/GeoEngineers/GeoMapPing"
   },
   "dependencies" : {
+    "bower" :  "*",
     "underscore" :  "*",
     "bookshelf"  :  "*",
     "q" :  "*",
