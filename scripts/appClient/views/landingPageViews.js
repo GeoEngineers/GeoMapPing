@@ -28,10 +28,9 @@ var LandingPageView = Backbone.Marionette.Layout.extend({
                 servicesDown += 1;
             upTotal += service.Up;
             downTotal += service.Down;
-            totaltests += upTotal + downTotal;
             serviceCount += 1;
         });
-
+        totaltests = upTotal + downTotal;
         if(upTotal == 0)    averageUpTime = 0;
 	if(totaltests == 0) averageUpTime = 100;
         if(totaltests !=0)  averageUpTime = (upTotal / totaltests) * 100;
