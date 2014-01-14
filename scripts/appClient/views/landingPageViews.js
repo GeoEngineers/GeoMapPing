@@ -21,7 +21,7 @@ var LandingPageView = Backbone.Marionette.Layout.extend({
         var downTotal = 0;
         var totaltests = 0;
         _.each(this.services, function (service) {
-            if (service.Status == "Available")
+            if (service.Status == '"Available"')
                 servicesUp += 1;
             else
                 servicesDown += 1;
