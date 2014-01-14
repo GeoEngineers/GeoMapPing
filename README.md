@@ -35,3 +35,5 @@ bower install -g
 node server.js
 </code>
 </pre>
+
+<img src="http://geopublic.s3.amazonaws.com/GeoMapPing_Landing.png" width="900px"/>
