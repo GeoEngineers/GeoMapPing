@@ -48,7 +48,7 @@ function checkService(resultRow)
 		request(resultRow.Url, function (error, response, body) {
 			if (!error && response.statusCode == 200 && body.indexOf("Invalid URL") == -1) {
 				//The Service Was Available				
-				available = '"Available"';
+				available = 'Available';
 				notified = 0;
 				up = up + 1;
 				found = true;
@@ -56,7 +56,7 @@ function checkService(resultRow)
 			else
 			{
 				//The Service was Unavailable
-				available = '"Unavailable"';
+				available = 'Unavailable';
 				notified = 1;
 				down = down + 1;
 				up = resultRow.Up;
