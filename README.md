@@ -3,7 +3,7 @@ GeoMapPing
 
 #What is GeoMapPing#
 
-GeoMapPing is a very simple web service monitoring tool written in <a href="http://nodejs.org">Node.js</a>.  GeoMapPing can be setup to provide email alerts when a map service is no longer responding to API REST calls.  GeoMapPing can be deployed in the Cloud or setup behind a organization firewall to monitor map services.  
+GeoMapPing is a very simple web service monitoring tool written in <a href="http://nodejs.org">Node.js</a>.  GeoMapPing can be setup to provide email alerts (Amazon SES or SMTP) when a map service is no longer responding to API REST calls.  GeoMapPing can be deployed in the Cloud or setup behind a organization firewall to monitor map services.  
 
 #Prerequisites#
 
