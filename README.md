@@ -19,20 +19,20 @@ npm install
 
 -Install <a href="https://github.com/bower/bower">bower</a>
 
-<code>
+```
 bower install
-</code>
+```
 
 <B>NOTE:</B> You might have to install bower globally if you run into errors installing bower.
 
-<code>
+```
 bower install -g
-</code>
+```
 
 - Run node to launch the app.
 
-<code>
+```
 node server.js
-</code>
+```
 
 <img src="http://geopublic.s3.amazonaws.com/GeoMapPing_Landing.png" width="900px"/>
