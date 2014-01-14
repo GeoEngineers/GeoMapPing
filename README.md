@@ -7,4 +7,4 @@ GeoMapPing is a very simple web service monitoring tool written in Node.js.  Geo
 
 <h2>Prerequisites</h2>
 
-* Node.js
+* <a href="http://nodejs.org/download/">Node.js</a>
