@@ -7,7 +7,7 @@ GeoMapPing is a very simple web service monitoring tool written in <a href="http
 
 #Prerequisites#
 
-* <a href="http://nodejs.org/download/">Node.js</a>
+-<a href="http://nodejs.org/download/">Node.js</a>
 
 
 #How to Install#
@@ -29,7 +29,7 @@ bower install
 bower install -g
 ```
 
-- Run node to launch the app.
+-Run node to launch the app.
 
 ```
 node server.js
