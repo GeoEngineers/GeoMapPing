@@ -9,6 +9,7 @@
   },
   "dependencies" : {
     "bower" :  "*",
+    "lodash": "~2.4.1",
     "underscore" :  "*",
     "bookshelf"  :  "*",
     "q" :  "*",
