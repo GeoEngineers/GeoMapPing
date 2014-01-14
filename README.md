@@ -11,13 +11,11 @@ GeoMapPing is a very simple web service monitoring tool written in <a href="http
 
 
 #How to Install#
-* Run npm install to update all Node modules
-<pre>
+-Run npm install to update all Node modules
 <code>
 npm install
 </code>
-</pre>
-* Install <a href="https://github.com/bower/bower">bower</a>
+-Install <a href="https://github.com/bower/bower">bower</a>
 <pre>
 <code>
 bower install
