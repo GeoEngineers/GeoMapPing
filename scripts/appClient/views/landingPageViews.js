@@ -3,7 +3,6 @@ var LandingPageView = Backbone.Marionette.Layout.extend({
         return Handlebars.buildTemplate(serialized_model, MainApplication.Templates.LandingPageView);
     },
     initialize: function (options) {
-		//this.bikePathModel = options.bikePathModel;
         this.servicesCollection = options.servicesCollection;
         _.bindAll(this, 'onShow');
     },
@@ -86,7 +85,7 @@ var LandingPageView = Backbone.Marionette.Layout.extend({
         var data = [];
         _.each(this.services, function (service) {
             data.push({
-                Id: service.ID,
+                Id: service.Id,
                 Name: service.Name,
                 Url: service.Url,
                 Status: service.Status
@@ -135,7 +134,7 @@ var ServiceModalView = Backbone.Marionette.Layout.extend({
         var name = "";
         var url = "";
         _.each(this.services, function (service) {
-            if (service.ID.toString() == dc.id) {
+            if (service.Id.toString() == dc.id) {
                 name = service.Name;
                 url = service.Url;
             }
@@ -168,10 +167,28 @@ var ServiceModalView = Backbone.Marionette.Layout.extend({
     },
     saveService: function () {
         postdata = {
-            i: this.id,
-            n: $('#txtName').val(),
-            u: $('#txtUrl').val()
+            ServicesListItem: {
+                ID: this.id,
+                Name: $('#txtName').val(),
+                Url: $('#txtUrl').val(),
+                Notified: 0
+            }
         };
+        if(this.id == 0){
+            postdata = {
+            ServicesListItem: {
+                Name: $('#txtName').val(),
+                Url: $('#txtUrl').val(),
+                Notified: 0,
+                Up: 0,
+                Down: 0,
+                Status: "Available"
+            }
+            };
+        }
+
+        
+
         var urltarget = MainApplication.hostURL + '/saveService';
         $.getJSON(urltarget, postdata, function (data) {
             MainApplication.models.serviceCollection.fetch({
@@ -221,10 +238,11 @@ var ServiceDeleteModalView = Backbone.Marionette.Layout.extend({
     },
     deleteService: function () {
         postdata = {
-            i: this.id
-        };
+                id: this.id   
+        };               
         var urltarget = MainApplication.hostURL + '/deleteService';
         $.getJSON(urltarget, postdata, function (data) {
+            
             MainApplication.models.serviceCollection.fetch({
                 reset: true,
                 dataType: 'jsonp',
@@ -233,7 +251,6 @@ var ServiceDeleteModalView = Backbone.Marionette.Layout.extend({
                     MainApplication.views.landingPageView.onShow();
                 },
                 error: function (model, xhr, options) {
-
                 }
             });
         });

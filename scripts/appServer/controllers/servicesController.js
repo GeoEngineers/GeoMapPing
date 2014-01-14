@@ -1,57 +1,44 @@
-var sqliteQuery = require('../lib/geoSqliteQuery.js');
-var utilities = require('../lib/utilities.js');
-
-exports.get = function (req, res, next) {
-    var queryServices = 'SELECT ID, Name, Url, Status, Notified, Up, Down from Service;';    
-    var queryManager = new sqliteQuery.QueryExecutor(queryServices,
-        function (result) {            
-            res.send(result);
-        },
-        function (errorMessage) {
-	    console.log(errorMessage);
-            res.send(errorMessage);
-        });
-    queryManager.executeQuery();
-}
+var services = require('../src/services.js');
+var when = require('when');
+var geoUtilities = require('../../appServer/lib/geoUtilities.js');
 
 
-exports.put = function (req, res, next) {
-    var query = buildQuery(req);
-    var queryManager = new sqliteQuery.QueryExecutor(query,
-        function (result) {
-            res.send("Service Saved");
-        },
-        function (errorMessage) {
-	    console.log(errorMessage);
-            res.send(errorMessage);
-        });
-    queryManager.executeQuery();
-}
-
-exports.destroy = function (req, res, next) {
-    var id = utilities.getParameterByName('i', req.url);
-    var query = 'Delete from Service Where ID = ' + id + ';';
-    var queryManager = new sqliteQuery.QueryExecutor(query,
-        function (result) {
-            res.send("Service Deleted");
-        },
-        function (errorMessage) {
-	    console.log(errorMessage);
-            res.send(errorMessage);
-        });
-    queryManager.executeQuery();
-}
+exports.get = function(req, res, next){
+    services.getCurrentServicesList()
+    .then(function(result){
+        res.send(result);
+        return next();
+    })
+    .otherwise(function(error){
+        res.send(error);
+        return next(error);
+    });
+};
 
 
-function buildQuery(req) {
+exports.put = function(req, res, next) {    
+    services.saveServicesListItem(req.params.ServicesListItem)
+    .then(function(result){
+        res.send(result);
+        return next();
+    })
+    .otherwise(function(error){
+        res.send(error);
+        return next(error);
+    });
+};
 
-    var id = utilities.getParameterByName('i', req.url);
-    var name = utilities.getParameterByName('n', req.url);
-    var service = utilities.getParameterByName('u', req.url);
-    var query = "Insert into Service (Name, Url, Notified, Up, Down, Status) Values ";
-    query = query + "('" + name + "', '" + service + "', 0,0,0,'Available');";
-    if (id != 0) {
-        query = "Update Service Set Name = '" + name + "', Url ='"+service+"', Notified = 0 Where ID =" + id + ';';
-    }
-    return query;
-}
+
+
+exports.destroy = function(req, res, next) {
+    services.removeServicesListItem(req.params.id)
+    .then(function(result){
+        console.log("Destroy Complete");
+        res.send(result);
+        return next();
+    })
+    .otherwise(function(error){
+        res.send(error);
+        return next(error);
+    });
+};

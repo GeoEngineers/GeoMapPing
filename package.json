@@ -9,7 +9,7 @@
   },
   "dependencies" : {
     "bower" :  "*",
-    "lodash": "~2.4.1",
+    "lodash": "*",
     "underscore" :  "*",
     "bookshelf"  :  "*",
     "q" :  "*",
@@ -17,11 +17,12 @@
     "restify" : "*",
     "minify" : "*",
     "amazon-ses" : "*",
-    "sqlite3" : "~2.1.19",
+    "sqlite3" : "*",
     "request" : "*",
     "nodemailer" : "*",
     "when": "*",
-    "change-case": "~1.0.4"
+    "should": "*",
+    "change-case": "*"
   },
   "devDependencies": {
     "jasmine-node"    :  "*"
