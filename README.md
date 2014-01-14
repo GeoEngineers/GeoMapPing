@@ -39,4 +39,4 @@ node server.js
 
 #Configuring Email Alerts#
 
-GeoMapPing supports emails sent via Amazon's SES service as well as standard SMTP protocals.
+GeoMapPing supports emails sent via <a href="http://aws.amazon.com/ses/">Amazon's SES product </a> as well as standard SMTP protocals.
