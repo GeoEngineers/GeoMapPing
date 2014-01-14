@@ -36,3 +36,7 @@ node server.js
 ```
 
 <img src="http://geopublic.s3.amazonaws.com/GeoMapPing_Landing.png" width="900px"/>
+
+#Configuring Email Alerts#
+
+GeoMapPing supports emails sent via Amazon's SES service as well as standard SMTP protocals.
