@@ -43,8 +43,8 @@ function checkService(resultRow)
 	if(resultRow.Url != null && resultRow.Url != "" && resultRow.Url != undefined)
 	{
 		request(resultRow.Url, function (error, response, body) {
-			if (!error && response.statusCode == 200) {
-				//The Service Was Available
+			if (!error && response.statusCode == 200 && body.indexOf("Invalid URL") == -1) {
+				//The Service Was Available				
 				available = '"Available"';
 				notified = 0;
 				up = up + 1;
@@ -83,7 +83,6 @@ function checkService(resultRow)
 						}
 						if(notNotified.length > 0)
 						{
-							console.log("Sending Email:");
 						    email([config.adminemail], config.adminemail, 'Message from your Web Service Monitor',  alertStr); 
 						}
 						else
@@ -108,7 +107,6 @@ function checkService(resultRow)
 				}
 				if(notNotified.length > 0)
 				{
-					console.log("Sending Email:");
 				    email([config.adminemail], config.adminemail, 'Message from your Web Service Monitor',  alertStr); 
 				}
 				else
