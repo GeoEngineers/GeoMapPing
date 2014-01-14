@@ -12,18 +12,25 @@ GeoMapPing is a very simple web service monitoring tool written in <a href="http
 
 #How to Install#
 -Run npm install to update all Node modules
+
 <code>
 npm install
 </code>
+
 -Install <a href="https://github.com/bower/bower">bower</a>
+
 <code>
 bower install
 </code>
+
 <B>NOTE:</B> You might have to install bower globally if you run into errors installing bower.
+
 <code>
 bower install -g
 </code>
+
 - Run node to launch the app.
+
 <code>
 node server.js
 </code>
