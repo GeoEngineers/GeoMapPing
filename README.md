@@ -10,7 +10,7 @@ GeoMapPing is a very simple web service monitoring tool written in <a href="http
 * <a href="http://nodejs.org/download/">Node.js</a>
 
 
-<h2>How to Install</h2>
+#How to Install#
 * Run npm install to update all Node modules
 <pre>
 <code>
