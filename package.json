@@ -22,7 +22,8 @@
     "nodemailer" : "*",
     "when": "*",
     "should": "*",
-    "change-case": "*"
+    "change-case": "*",
+    "node-schedule": "*"
   },
   "devDependencies": {
     "jasmine-node"    :  "*"

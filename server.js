@@ -1,9 +1,19 @@
 
 var restify = require('restify');
 var fs = require("fs");
+var schedule = require('node-schedule');
+
 var siteController = require('./scripts/appServer/controllers/siteController.js');
 var servicesController = require('./scripts/appServer/controllers/servicesController.js');
+var checkservicesController = require('./scripts/appServer/controllers/checkservicesController.js');
 var config = JSON.parse(fs.readFileSync("config.json"));
+
+var rule = new schedule.RecurrenceRule();
+rule.minute = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]; //Runs every 5 minutes
+
+var job = schedule.scheduleJob(rule, function(){
+	checkservicesController.checkServices();    
+});
 
 
 var server = restify.createServer();

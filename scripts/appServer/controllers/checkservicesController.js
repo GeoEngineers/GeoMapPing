@@ -17,6 +17,9 @@ var servicesList;
 
 exports.checkServices = function()
 {
+	servicesDown = [];
+	notNotified = [];
+	serviceschecked = [];
 	services.getCurrentServicesList()
     	.then(function(result){
     		 if(result.length > 0)
@@ -84,10 +87,6 @@ function checkService(resultRow)
 						if(notNotified.length > 0)
 						{
 						    email([config.adminemail], config.adminemail, 'Message from your Web Service Monitor',  alertStr); 
-						}
-						else
-						{
-							process.exit(0);
 						}	
 					}		          		
 				});	
@@ -109,10 +108,6 @@ function checkService(resultRow)
 				{
 				    email([config.adminemail], config.adminemail, 'Message from your Web Service Monitor',  alertStr); 
 				}
-				else
-				{
-					process.exit(0);
-				}	
 			}		
 	}
 }
@@ -133,7 +128,6 @@ function email(to, from, subject, body)  {
                }
             }, function (result) {
                 console.log('Email Away!');
-		        process.exit(0);
             });
         }
         catch (error){
@@ -162,7 +156,6 @@ function email(to, from, subject, body)  {
         		console.log(error);
     		}else{
         		console.log("Message sent: " + response.message);
-			process.exit(0);
     		}
     		smtpTransport.close(); // shut down the connection pool, no more messages
 	});
