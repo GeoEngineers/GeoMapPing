@@ -1,4 +1,5 @@
 {
+	"checkInterval": 1,
 	"port": 1337,
 	"host": "localhost",
 	"adminemail": "",

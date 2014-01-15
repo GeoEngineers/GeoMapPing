@@ -9,8 +9,13 @@ var checkservicesController = require('./scripts/appServer/controllers/checkserv
 var config = JSON.parse(fs.readFileSync("config.json"));
 
 var rule = new schedule.RecurrenceRule();
-rule.minute = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]; //Runs every 5 minutes
-
+var minuteInterval = config.checkInterval;
+rule.minute = []; //Runs every 1 minutes
+for(var i=0; i < 60; i++)
+{
+	if(i % minuteInterval == 0)
+	rule.minute.push(i);
+}
 var job = schedule.scheduleJob(rule, function(){
 	checkservicesController.checkServices();    
 });
