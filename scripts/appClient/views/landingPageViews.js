@@ -100,10 +100,10 @@ var LandingPageView = Backbone.Marionette.Layout.extend({
         this.grid.render();
     },
     EditServiceButton: function (row, cell, value, columnDef, dataContext) {
-        return "<a style=\"cursor: pointer; color:#ccff00;\" class=\"dispatcher\" id=\"dispatcher_showService_" + value + "\" data-service=\"" + value + "\"> <img src='./Content/themes/base/glyphicons/glyphicons_030_pencil_yellow.png' class='pencil-icon'  /></a>";
+        return "<a style=\"cursor: pointer; color:#ccff00;\" class=\"dispatcher\" id=\"dispatcher_showService_" + value + "\" data-service=\"" + value + "\"> <img src='./content/themes/base/glyphicons/glyphicons_030_pencil_yellow.png' class='pencil-icon'  /></a>";
     },
     DeleteServiceButton: function (row, cell, value, columnDef, dataContext) {
-        return "<a style=\"cursor: pointer; color:#cc4400;\"  class=\"dispatcher\" id=\"dispatcher_showDeleteService_" + value + "\" data-service=\"" + value + "\"> <img src='./Content/themes/base/glyphicons/glyphicons_016_bin_red.png' class='trash-icon' /></a>";
+        return "<a style=\"cursor: pointer; color:#cc4400;\"  class=\"dispatcher\" id=\"dispatcher_showDeleteService_" + value + "\" data-service=\"" + value + "\"> <img src='./content/themes/base/glyphicons/glyphicons_016_bin_red.png' class='trash-icon' /></a>";
     },
     dispatcherInstantiate: function (e) {
         var dispatcher_name_arr = e.currentTarget.id.split("_");
