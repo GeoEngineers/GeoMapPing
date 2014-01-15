@@ -33,7 +33,7 @@ GeoMapPing uses <a href="https://github.com/mattpat/node-schedule"> node-schedul
 
 To configure open the config.js file and edit the checkInterval variable with the value in minutes.
 
-'''
+```
 {
         "checkInterval": 5,
         "port": 1337,
@@ -43,7 +43,7 @@ To configure open the config.js file and edit the checkInterval variable with th
         "emailuser": "",
         "emailpass": ""
 }
-'''
+```
 
 The above example checks every 5 minutes.
 
