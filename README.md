@@ -27,6 +27,10 @@ node server.js
 
 GeoMapPing supports emails sent via <a href="http://aws.amazon.com/ses/">Amazon's SES product </a> as well as standard SMTP protocals.
 
+To configure open the config.js file.  Set the adminemail variable equal to who will be receiving emails.  The emailservice variable supports the following values: Amazon, Gmail, and SMTP address.  
+
+The emailuser and emailpass variables are intended for Amazon SES use and require your Amazon Access and Secret keys.
+
 ##Configuring The Scheduler##
 
 GeoMapPing uses <a href="https://github.com/mattpat/node-schedule"> node-schedule </a> to handle scheduling of service health check calls.  You can configure the scheduler to check at a set interval.
