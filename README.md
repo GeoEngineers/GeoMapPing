@@ -40,3 +40,6 @@ node server.js
 #Configuring Email Alerts#
 
 GeoMapPing supports emails sent via <a href="http://aws.amazon.com/ses/">Amazon's SES product </a> as well as standard SMTP protocals.
+
+#Known Issues#
+- The monitoring tool does support ArcGIS.com Map Services in addition to ArcGIS Services.  
