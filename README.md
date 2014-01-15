@@ -29,9 +29,23 @@ GeoMapPing supports emails sent via <a href="http://aws.amazon.com/ses/">Amazon'
 
 ##Configuring The Scheduler##
 
-GeoMapPing uses <a href="https://github.com/mattpat/node-schedule"> node-schedule to handle scheduling of service health check calls.  You can configure the scheduler to check at a set interval.
+GeoMapPing uses <a href="https://github.com/mattpat/node-schedule"> node-schedule </a> to handle scheduling of service health check calls.  You can configure the scheduler to check at a set interval.
 
-To configure open the server.js file and edit the
+To configure open the config.js file and edit the checkInterval variable with the value in minutes.
+
+'''
+{
+        "checkInterval": 5,
+        "port": 1337,
+        "host": "localhost",
+        "adminemail": "",
+        "emailservice": "Amazon",
+        "emailuser": "",
+        "emailpass": ""
+}
+'''
+
+The above example checks every 5 minutes.
 
 ##Known Issues##
 - The monitoring tool does support ArcGIS.com Map Services in addition to ArcGIS Services.  ArcGIS.com Map Services are not exactly removed the same way as standard ArcGIS Server Map Services.  Instead of checking for straight HTTP status calls, ArcGIS.com Map Service calls intercept the Service status. 
