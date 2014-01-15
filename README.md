@@ -15,18 +15,6 @@ GeoMapPing is a very simple web service monitoring tool written in <a href="http
 npm install
 ```
 
--Install <a href="https://github.com/bower/bower">bower</a>
-
-```
-bower install
-```
-
-<B>NOTE:</B> You might have to install bower globally if you run into errors installing bower.
-
-```
-bower install -g
-```
-
 -Run node to launch the app.
 
 ```
@@ -41,3 +29,4 @@ GeoMapPing supports emails sent via <a href="http://aws.amazon.com/ses/">Amazon'
 
 ##Known Issues##
 - The monitoring tool does support ArcGIS.com Map Services in addition to ArcGIS Services.  ArcGIS.com Map Services are not exactly removed the same way as standard ArcGIS Server Map Services.  Instead of checking for straight HTTP status calls, ArcGIS.com Map Service calls intercept the Service status. 
+- Secure Map Services are not yet supported.  
