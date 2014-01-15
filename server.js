@@ -29,7 +29,8 @@ server.get('/saveService', servicesController.put);
 server.get('/deleteService', servicesController.destroy);
 server.get('/.*', siteController.loadsite);
 
+var port = process.env.PORT || 1337;
 
-server.listen(config.port, config.host, function(){
-	console.log("listening: " + config.host + ":" + config.port);
+server.listen(port, function() {
+	console.log('%s listening at %s', server.name, server.url);
 });
