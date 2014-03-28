@@ -21,7 +21,6 @@ npm install
 node server.js
 ```
 
-<img src="http://geopublic.s3.amazonaws.com/GeoMapPing_Landing.png" width="900px"/>
 
 ##Configuring Email Alerts##
 
